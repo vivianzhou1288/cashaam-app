@@ -1,0 +1,45 @@
+body{
+  text-align: center;
+  background-size: 390px;
+}
+
+.title{
+  margin-top: 10rem;
+  font-size: 25px;
+  color: lightgrey;
+  margin-bottom: 3rem;
+}
+
+.homeImage{
+  width: 308.24px;
+  height: 300px;
+}
+
+.button{
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; 
+  height: 50px;
+  width: 20rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 2rem;
+  font-size: 20px;
+}
+
+.sign-in-button{
+  border: none;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  background-color: orange;
+  color: white;
+}
+
+.create-account-button{
+  border-style: solid;
+  border-color: orange;
+  background-color: transparent;
+  color: orange;
+  font-weight: bold;
+  
+}
