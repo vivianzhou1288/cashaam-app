@@ -4,6 +4,7 @@ import { useState } from "react";
 import Home from "./components/Home";
 import Create from "./components/Create";
 import Verify from "./components/Verify";
+import Ads from "./components/Ads";
 
 function App() {
   // const [color, changeColor] = useState("#C3B1E1");
@@ -22,10 +23,11 @@ function App() {
         element={<Create />}
       ></Route>
       <Route
-        path="verify"
+        path="create/verify"
         // onClick={() => changeColor("#FFFFFF")}
         element={<Verify />}
       ></Route>
+      <Route path="create/ads" element={<Ads />}></Route>
     </Routes>
     // </body>
   );

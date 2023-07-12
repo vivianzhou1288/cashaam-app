@@ -1,6 +1,10 @@
 body{
-  text-align: center;
+  /* text-align: center; */
   background-size: 390px;
+}
+
+.home {
+  text-align: center;
 }
 
 .title{
@@ -41,5 +45,4 @@ body{
   background-color: transparent;
   color: orange;
   font-weight: bold;
-  
 }
