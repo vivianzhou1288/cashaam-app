@@ -7,6 +7,7 @@ function Form() {
   const [lastName, setLastName] = useState("");
   const [number, setNumber] = useState("");
   const [email, setEmail] = useState("");
+  const [agreement, setAgreement] = useState(false);
   const navigate = useNavigate();
 
   const submitForm = (e) => {
@@ -17,8 +18,12 @@ function Form() {
     navigate("ads");
   };
 
+  const handleChange = (e) => {
+    setAgreement(e.target.checked);
+  };
+
   function SubmitButton() {
-    if (firstName && lastName && number && email) {
+    if (firstName && lastName && number && email && agreement) {
       return <button className="button sign-up-button">Sign up</button>;
     } else {
       return (
@@ -72,9 +77,22 @@ function Form() {
         ></input>
       </div>
       <div className="conditions">
-        <label>
-          <input type="checkbox" className="terms"></input> Agree to our Terms &
-          Conditions
+        <label className="termsConditions">
+          <input
+            type="checkbox"
+            className="terms"
+            onChange={handleChange}
+          ></input>{" "}
+          Agree to our{" "}
+          <span
+            style={{
+              color: "#7455C1",
+              textDecoration: "underline #7455C1",
+              fontWeight: "bold",
+            }}
+          >
+            Terms & Conditions
+          </span>
         </label>
       </div>
       <SubmitButton />

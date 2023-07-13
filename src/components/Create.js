@@ -13,7 +13,18 @@ function Create() {
         Enter your username below <br></br> to create your account
       </p>
       <Form />
-      <p>Already a user? Sign in</p>
+      <p>
+        Already a user?{" "}
+        <span
+          style={{
+            color: "#7455C1",
+            textDecoration: "underline #7455C1",
+            fontWeight: "bold",
+          }}
+        >
+          Sign in
+        </span>{" "}
+      </p>
     </div>
   );
 }
